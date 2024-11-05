@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Comparison - Crop Resistance Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="comparison.html">Crop Comparison</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <h1>Crop Comparison</h1>
+        <p>Explore the differences in pest resistance, disease tolerance, and yields between hybrid and traditional crops.</p>
+    </header>
+
+    <!-- Comparison Tabs -->
+    <section class="tabs-section">
+        <div class="tabs">
+            <button class="tab-button active" onclick="showTab('resistance')">Pest Resistance</button>
+            <button class="tab-button" onclick="showTab('disease')">Disease Tolerance</button>
+            <button class="tab-button" onclick="showTab('yield')">Yield Performance</button>
+        </div>
+        
+        <!-- Pest Resistance Tab Content -->
+        <div id="resistance" class="tab-content active">
+            <h2>Pest Resistance Comparison</h2>
+            <p>Understand how different crop types respond to various pest species.</p>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Crop Type</th>
+                        <th>Resistance Level</th>
+                        <th>Common Pests</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hybrid</td>
+                        <td>High</td>
+                        <td>Aphids, Leafhoppers</td>
+                    </tr>
+                    <tr>
+                        <td>Traditional</td>
+                        <td>Moderate</td>
+                        <td>Cutworms, Stemborers</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Disease Tolerance Tab Content -->
+        <div id="disease" class="tab-content">
+            <h2>Disease Tolerance Comparison</h2>
+            <p>Comparing disease resistance in hybrid and traditional crops.</p>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Crop Type</th>
+                        <th>Disease Tolerance</th>
+                        <th>Common Diseases</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hybrid</td>
+                        <td>High</td>
+                        <td>Rust, Blight</td>
+                    </tr>
+                    <tr>
+                        <td>Traditional</td>
+                        <td>Low</td>
+                        <td>Wilt, Root Rot</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Yield Performance Tab Content -->
+        <div id="yield" class="tab-content">
+            <h2>Yield Performance Comparison</h2>
+            <p>Compare average yields to understand productivity differences.</p>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Crop Type</th>
+                        <th>Average Yield (tons/hectare)</th>
+                        <th>Advantages</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hybrid</td>
+                        <td>4.5</td>
+                        <td>Higher productivity, more uniform growth</td>
+                    </tr>
+                    <tr>
+                        <td>Traditional</td>
+                        <td>2.8</td>
+                        <td>Resilient to local conditions</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3 onclick="toggleFaq('faq1')">What factors influence pest resistance? <span class="toggle-icon">+</span></h3>
+            <p id="faq1" class="faq-content">Pest resistance is influenced by genetics, environmental factors, and management practices, including crop type and pest control measures.</p>
+        </div>
+        <div class="faq-item">
+            <h3 onclick="toggleFaq('faq2')">Why choose hybrids for higher yield? <span class="toggle-icon">+</span></h3>
+            <p id="faq2" class="faq-content">Hybrid crops are bred for specific traits like higher yield and uniform growth, which can improve overall productivity.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Crop Resistance Dashboard</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

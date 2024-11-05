@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Crop Resistance Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="comparison.html">Crop Comparison</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <h1>About Crop Resistance Dashboard</h1>
+        <p>Learn more about our mission, history, and the purpose behind our dashboard.</p>
+    </header>
+
+    <!-- Mission Section -->
+    <section class="mission-section">
+        <h2>Our Mission</h2>
+        <p>Our goal is to empower farmers, researchers, and decision-makers with data-driven insights on crop resistance and yield, enabling sustainable and effective pest management strategies.</p>
+    </section>
+
+    <!-- History Section with Timeline -->
+    <section class="history-section">
+        <h2>Our History</h2>
+        <div class="timeline">
+            <div class="timeline-event">
+                <span class="timeline-date">2010</span>
+                <p>Founded with a mission to improve crop resilience through research and data.</p>
+            </div>
+            <div class="timeline-event">
+                <span class="timeline-date">2015</span>
+                <p>Launched our first crop comparison tool, making pest resistance data accessible to farmers.</p>
+            </div>
+            <div class="timeline-event">
+                <span class="timeline-date">2020</span>
+                <p>Expanded features to include hybrid vs. traditional crop comparisons and yield analysis.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section with Expandable Content -->
+    <section class="values-section">
+        <h2>Our Core Values</h2>
+        <div class="value-item">
+            <h3 onclick="toggleContent('sustainability')">Sustainability <span class="toggle-icon">+</span></h3>
+            <p id="sustainability" class="value-content">We prioritize eco-friendly practices, aiming to reduce the use of harmful pesticides through integrated pest management.</p>
+        </div>
+        <div class="value-item">
+            <h3 onclick="toggleContent('innovation')">Innovation <span class="toggle-icon">+</span></h3>
+            <p id="innovation" class="value-content">Constantly evolving our tools to provide the latest data and insights in crop resistance and pest management.</p>
+        </div>
+        <div class="value-item">
+            <h3 onclick="toggleContent('collaboration')">Collaboration <span class="toggle-icon">+</span></h3>
+            <p id="collaboration" class="value-content">Partnering with researchers and farmers to develop practical solutions for real-world challenges.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Crop Resistance Dashboard</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
